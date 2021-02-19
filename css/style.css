@@ -25,69 +25,118 @@ tr{
 /*END STARTER CODE*/
 
 body{
+  font-family: 'Andika', sans-serif;
+  background-image: url("../images/pigeon-background.JPEG");
+  background-size: cover;
+  background-color: #DDDDDD;
+  background-position: center;
+  background-repeat: no-repeat;
   color: #000000;
   font-size: 16px;
   margin: 1.2em;
-  background-size: cover ;
-  background-position: center;
-
   /*Req 1*/
 }
 
 h1{
-  color: #c12258;
+  text-align: center;
   font-size: 2em;
-
+  line-height: 2;
+  color: #c12258;
   /*Req 2*/
 }
 
 p{
+  padding-top: 15px;
   /*Req 3*/
 }
 
 a{
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  color: #B21F50;
+  font-size: 16px;
   /*Req 4*/
 }
 
 /*Req 5*/
 /*Add selector and rule here*/
-
+*:focus{
+  border: 3px dashed #417243
+}
 
 /*Req 6a*/
 td{
-  
+  text-align: center;
+  padding: 10px;
+  border-top: 2px solid black;
 }
 
 /*Req 6b*/
 .colhead{
+  /* margin: auto; */
+  background-color: #7e0820;
   color: #FFFFFF;
-
+  vertical-align: middle;
+  text-align: center;
+  text-transform: uppercase;
+  min-width: 125px;
+  padding: 10px;
 }
 /*Req 6c*/
 .rowhead{
-
+  border-right: 2px solid black;
+  border-top: 2px solid black;
 }
 
 /*Req 6d*/
 /*Req 6e*/
 /*Req 6f*/
+tr:nth-child(even){
+  background-color: #D1D1D1;
+}
+
+tr:nth-child(odd){
+  background-color: transparent;
+}
+
+tr:hover{
+  background-color: rgb(126, 8, 32, 0.25);
+}
 
 
 /*Req 7*/
 table{
-    border: 2px solid #000000;
+  border: 2px solid #000000;
+  border-collapse: separate;
+  border-radius: 10px;
+  margin: 0 auto;
 }
 
-thead tr:first-child th:first-child{}
+thead tr:first-child th:first-child{
+  border-radius: 10px 0px 0px 0px;
+}
 
-/*Add selectors and rules here*/
+thead tr:last-child th:last-child{
+  border-radius: 0px 10px 0px 0px;
+}
 
+tbody tr:last-child td:last-child {
+  border-radius: 0px 0px 10px 0px;
+}
+
+tbody tr:last-child th:first-child {
+  border-radius: 0px 0px 0px 10px;
+}
 
 /*Req 8*/
 footer{
-  width:100%;
   background:#000000;
-  text-align:center;
   color: #FFFFFF;
+  text-align:center;
+  margin-left: 0px;
+  min-height: 75px;
+  bottom:0; left: 0px;
+  width:100%;
+  position:fixed;
 }
 
